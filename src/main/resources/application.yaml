@@ -1,0 +1,17 @@
+server:
+  port: 9095
+
+spring:
+  application:
+  name: blogapp
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:blog-app;
+    username: sa
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: create # In Production use "update", NOT "create"
+    show-sql: true
